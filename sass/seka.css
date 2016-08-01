@@ -1,0 +1,691 @@
+body, li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+*{
+  list-style:none;
+}
+.seka::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.seka li {
+  width: 4.7619%;
+  height: 80px;
+  float: left;
+}
+
+.seka .red li:nth-child(1) {
+  background: #ffcccc;
+}
+
+.seka .red li:nth-child(2) {
+  background: #ffb8b8;
+}
+
+.seka .red li:nth-child(3) {
+  background: #ffa3a3;
+}
+
+.seka .red li:nth-child(4) {
+  background: #ff8f8f;
+}
+
+.seka .red li:nth-child(5) {
+  background: #ff7a7a;
+}
+
+.seka .red li:nth-child(6) {
+  background: #ff6666;
+}
+
+.seka .red li:nth-child(7) {
+  background: #ff5252;
+}
+
+.seka .red li:nth-child(8) {
+  background: #ff3d3d;
+}
+
+.seka .red li:nth-child(9) {
+  background: #ff2929;
+}
+
+.seka .red li:nth-child(10) {
+  background: #ff1414;
+}
+
+.seka .red li:nth-child(11) {
+  background: red;
+}
+
+.seka .red li:nth-child(12) {
+  background: #e60000;
+}
+
+.seka .red li:nth-child(13) {
+  background: #cc0000;
+}
+
+.seka .red li:nth-child(14) {
+  background: #b30000;
+}
+
+.seka .red li:nth-child(15) {
+  background: #990000;
+}
+
+.seka .red li:nth-child(16) {
+  background: maroon;
+}
+
+.seka .red li:nth-child(17) {
+  background: #660000;
+}
+
+.seka .red li:nth-child(18) {
+  background: #4d0000;
+}
+
+.seka .red li:nth-child(19) {
+  background: #330000;
+}
+
+.seka .red li:nth-child(20) {
+  background: #1a0000;
+}
+
+.seka .red li:nth-child(21) {
+  background: black;
+}
+
+.seka .blue li:nth-child(1) {
+  background: #ccccff;
+}
+
+.seka .blue li:nth-child(2) {
+  background: #b8b8ff;
+}
+
+.seka .blue li:nth-child(3) {
+  background: #a3a3ff;
+}
+
+.seka .blue li:nth-child(4) {
+  background: #8f8fff;
+}
+
+.seka .blue li:nth-child(5) {
+  background: #7a7aff;
+}
+
+.seka .blue li:nth-child(6) {
+  background: #6666ff;
+}
+
+.seka .blue li:nth-child(7) {
+  background: #5252ff;
+}
+
+.seka .blue li:nth-child(8) {
+  background: #3d3dff;
+}
+
+.seka .blue li:nth-child(9) {
+  background: #2929ff;
+}
+
+.seka .blue li:nth-child(10) {
+  background: #1414ff;
+}
+
+.seka .blue li:nth-child(11) {
+  background: blue;
+}
+
+.seka .blue li:nth-child(12) {
+  background: #0000e6;
+}
+
+.seka .blue li:nth-child(13) {
+  background: #0000cc;
+}
+
+.seka .blue li:nth-child(14) {
+  background: #0000b3;
+}
+
+.seka .blue li:nth-child(15) {
+  background: #000099;
+}
+
+.seka .blue li:nth-child(16) {
+  background: navy;
+}
+
+.seka .blue li:nth-child(17) {
+  background: #000066;
+}
+
+.seka .blue li:nth-child(18) {
+  background: #00004d;
+}
+
+.seka .blue li:nth-child(19) {
+  background: #000033;
+}
+
+.seka .blue li:nth-child(20) {
+  background: #00001a;
+}
+
+.seka .blue li:nth-child(21) {
+  background: black;
+}
+
+.seka .green li:nth-child(1) {
+  background: #4dff4d;
+}
+
+.seka .green li:nth-child(2) {
+  background: #39ff39;
+}
+
+.seka .green li:nth-child(3) {
+  background: #24ff24;
+}
+
+.seka .green li:nth-child(4) {
+  background: #10ff10;
+}
+
+.seka .green li:nth-child(5) {
+  background: #00fa00;
+}
+
+.seka .green li:nth-child(6) {
+  background: #00e600;
+}
+
+.seka .green li:nth-child(7) {
+  background: #00d200;
+}
+
+.seka .green li:nth-child(8) {
+  background: #00bd00;
+}
+
+.seka .green li:nth-child(9) {
+  background: #00a900;
+}
+
+.seka .green li:nth-child(10) {
+  background: #009400;
+}
+
+.seka .green li:nth-child(11) {
+  background: green;
+}
+
+.seka .green li:nth-child(12) {
+  background: #006700;
+}
+
+.seka .green li:nth-child(13) {
+  background: #004d00;
+}
+
+.seka .green li:nth-child(14) {
+  background: #003400;
+}
+
+.seka .green li:nth-child(15) {
+  background: #001a00;
+}
+
+.seka .green li:nth-child(16) {
+  background: #000100;
+}
+
+.seka .green li:nth-child(17) {
+  background: black;
+}
+
+.seka .green li:nth-child(18) {
+  background: black;
+}
+
+.seka .green li:nth-child(19) {
+  background: black;
+}
+
+.seka .green li:nth-child(20) {
+  background: black;
+}
+
+.seka .green li:nth-child(21) {
+  background: black;
+}
+
+.seka .yellow li:nth-child(1) {
+  background: #ffffcc;
+}
+
+.seka .yellow li:nth-child(2) {
+  background: #ffffb8;
+}
+
+.seka .yellow li:nth-child(3) {
+  background: #ffffa3;
+}
+
+.seka .yellow li:nth-child(4) {
+  background: #ffff8f;
+}
+
+.seka .yellow li:nth-child(5) {
+  background: #ffff7a;
+}
+
+.seka .yellow li:nth-child(6) {
+  background: #ffff66;
+}
+
+.seka .yellow li:nth-child(7) {
+  background: #ffff52;
+}
+
+.seka .yellow li:nth-child(8) {
+  background: #ffff3d;
+}
+
+.seka .yellow li:nth-child(9) {
+  background: #ffff29;
+}
+
+.seka .yellow li:nth-child(10) {
+  background: #ffff14;
+}
+
+.seka .yellow li:nth-child(11) {
+  background: yellow;
+}
+
+.seka .yellow li:nth-child(12) {
+  background: #e6e600;
+}
+
+.seka .yellow li:nth-child(13) {
+  background: #cccc00;
+}
+
+.seka .yellow li:nth-child(14) {
+  background: #b3b300;
+}
+
+.seka .yellow li:nth-child(15) {
+  background: #999900;
+}
+
+.seka .yellow li:nth-child(16) {
+  background: olive;
+}
+
+.seka .yellow li:nth-child(17) {
+  background: #666600;
+}
+
+.seka .yellow li:nth-child(18) {
+  background: #4d4d00;
+}
+
+.seka .yellow li:nth-child(19) {
+  background: #333300;
+}
+
+.seka .yellow li:nth-child(20) {
+  background: #1a1a00;
+}
+
+.seka .yellow li:nth-child(21) {
+  background: black;
+}
+
+.seka .orange li:nth-child(1) {
+  background: #ffedcc;
+}
+
+.seka .orange li:nth-child(2) {
+  background: #ffe6b8;
+}
+
+.seka .orange li:nth-child(3) {
+  background: #ffdfa3;
+}
+
+.seka .orange li:nth-child(4) {
+  background: #ffd78f;
+}
+
+.seka .orange li:nth-child(5) {
+  background: #ffd07a;
+}
+
+.seka .orange li:nth-child(6) {
+  background: #ffc966;
+}
+
+.seka .orange li:nth-child(7) {
+  background: #ffc252;
+}
+
+.seka .orange li:nth-child(8) {
+  background: #ffbb3d;
+}
+
+.seka .orange li:nth-child(9) {
+  background: #ffb329;
+}
+
+.seka .orange li:nth-child(10) {
+  background: #ffac14;
+}
+
+.seka .orange li:nth-child(11) {
+  background: orange;
+}
+
+.seka .orange li:nth-child(12) {
+  background: #e69500;
+}
+
+.seka .orange li:nth-child(13) {
+  background: #cc8400;
+}
+
+.seka .orange li:nth-child(14) {
+  background: #b37400;
+}
+
+.seka .orange li:nth-child(15) {
+  background: #996300;
+}
+
+.seka .orange li:nth-child(16) {
+  background: #805300;
+}
+
+.seka .orange li:nth-child(17) {
+  background: #664200;
+}
+
+.seka .orange li:nth-child(18) {
+  background: #4d3200;
+}
+
+.seka .orange li:nth-child(19) {
+  background: #332100;
+}
+
+.seka .orange li:nth-child(20) {
+  background: #1a1100;
+}
+
+.seka .orange li:nth-child(21) {
+  background: black;
+}
+
+.seka .sky li:nth-child(1) {
+  background: #e5f1fa;
+}
+
+.seka .sky li:nth-child(2) {
+  background: #d4e7f7;
+}
+
+.seka .sky li:nth-child(3) {
+  background: #c3def4;
+}
+
+.seka .sky li:nth-child(4) {
+  background: #b1d5f0;
+}
+
+.seka .sky li:nth-child(5) {
+  background: #a0cbed;
+}
+
+.seka .sky li:nth-child(6) {
+  background: #8fc2ea;
+}
+
+.seka .sky li:nth-child(7) {
+  background: #7eb9e7;
+}
+
+.seka .sky li:nth-child(8) {
+  background: #6dafe4;
+}
+
+.seka .sky li:nth-child(9) {
+  background: #5ba6e0;
+}
+
+.seka .sky li:nth-child(10) {
+  background: #4a9cdd;
+}
+
+.seka .sky li:nth-child(11) {
+  background: #3993DA;
+}
+
+.seka .sky li:nth-child(12) {
+  background: #2787d2;
+}
+
+.seka .sky li:nth-child(13) {
+  background: #2379bd;
+}
+
+.seka .sky li:nth-child(14) {
+  background: #1f6ba7;
+}
+
+.seka .sky li:nth-child(15) {
+  background: #1b5d92;
+}
+
+.seka .sky li:nth-child(16) {
+  background: #17507c;
+}
+
+.seka .sky li:nth-child(17) {
+  background: #134267;
+}
+
+.seka .sky li:nth-child(18) {
+  background: #0f3451;
+}
+
+.seka .sky li:nth-child(19) {
+  background: #0b263c;
+}
+
+.seka .sky li:nth-child(20) {
+  background: #071926;
+}
+
+.seka .sky li:nth-child(21) {
+  background: #030b11;
+}
+
+.seka .floor li:nth-child(1) {
+  background: #e1f8d0;
+}
+
+.seka .floor li:nth-child(2) {
+  background: #d6f6be;
+}
+
+.seka .floor li:nth-child(3) {
+  background: #cbf3ac;
+}
+
+.seka .floor li:nth-child(4) {
+  background: #c0f19a;
+}
+
+.seka .floor li:nth-child(5) {
+  background: #b5ee88;
+}
+
+.seka .floor li:nth-child(6) {
+  background: #aaec76;
+}
+
+.seka .floor li:nth-child(7) {
+  background: #9ee964;
+}
+
+.seka .floor li:nth-child(8) {
+  background: #93e752;
+}
+
+.seka .floor li:nth-child(9) {
+  background: #88e441;
+}
+
+.seka .floor li:nth-child(10) {
+  background: #7de22f;
+}
+
+.seka .floor li:nth-child(11) {
+  background: #72DD1F;
+}
+
+.seka .floor li:nth-child(12) {
+  background: #66c71c;
+}
+
+.seka .floor li:nth-child(13) {
+  background: #5bb019;
+}
+
+.seka .floor li:nth-child(14) {
+  background: #4f9a16;
+}
+
+.seka .floor li:nth-child(15) {
+  background: #448412;
+}
+
+.seka .floor li:nth-child(16) {
+  background: #386d0f;
+}
+
+.seka .floor li:nth-child(17) {
+  background: #2d570c;
+}
+
+.seka .floor li:nth-child(18) {
+  background: #214009;
+}
+
+.seka .floor li:nth-child(19) {
+  background: #162a06;
+}
+
+.seka .floor li:nth-child(20) {
+  background: #0a1403;
+}
+
+.seka .floor li:nth-child(21) {
+  background: black;
+}
+
+.seka .ceil li:nth-child(1) {
+  background: #fec5f1;
+}
+
+.seka .ceil li:nth-child(2) {
+  background: #fdb1ec;
+}
+
+.seka .ceil li:nth-child(3) {
+  background: #fd9de7;
+}
+
+.seka .ceil li:nth-child(4) {
+  background: #fd89e2;
+}
+
+.seka .ceil li:nth-child(5) {
+  background: #fc75dd;
+}
+
+.seka .ceil li:nth-child(6) {
+  background: #fc61d9;
+}
+
+.seka .ceil li:nth-child(7) {
+  background: #fb4dd4;
+}
+
+.seka .ceil li:nth-child(8) {
+  background: #fb39cf;
+}
+
+.seka .ceil li:nth-child(9) {
+  background: #fb25ca;
+}
+
+.seka .ceil li:nth-child(10) {
+  background: #fa11c5;
+}
+
+.seka .ceil li:nth-child(11) {
+  background: #F205BC;
+}
+
+.seka .ceil li:nth-child(12) {
+  background: #d904a9;
+}
+
+.seka .ceil li:nth-child(13) {
+  background: #c00495;
+}
+
+.seka .ceil li:nth-child(14) {
+  background: #a70382;
+}
+
+.seka .ceil li:nth-child(15) {
+  background: #8e036e;
+}
+
+.seka .ceil li:nth-child(16) {
+  background: #75025b;
+}
+
+.seka .ceil li:nth-child(17) {
+  background: #5c0248;
+}
+
+.seka .ceil li:nth-child(18) {
+  background: #430134;
+}
+
+.seka .ceil li:nth-child(19) {
+  background: #2a0121;
+}
+
+.seka .ceil li:nth-child(20) {
+  background: #11000d;
+}
+
+.seka .ceil li:nth-child(21) {
+  background: black;
+}

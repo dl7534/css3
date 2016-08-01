@@ -1,0 +1,53 @@
+body,li,ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.list {
+	&::after{
+	  content:'';
+	  clear:both;
+	  display: table;
+	}
+    li {
+    	width:percentage(1/21);
+    	height:80px;
+    	float: left;
+    }
+}
+
+@mixin shengcheng($color,$x){
+	@for $i from 1 to 11 {
+		 $off : 11 - $i;
+		 .list.#{$x} li:nth-child(#{$i}){
+		 	 background:lighten($color,$off * 5);
+		 }
+	}
+	.list.#{$x} li:nth-child(11){
+		background: $color;
+	}
+	@for $i from  1 to 11 {
+		.list.#{$x} li:nth-child(#{$i + 11}){
+			background:darken($color,$i * 5);
+		}
+	}
+}
+
+$basecolor: red;
+$basea: #F15A24;
+$baseb: #F7931E;
+$baseyellow:yellow;
+$basezhise:#5F0F8A;
+$baseblue:blue;
+$basegreen:green;
+$basepurple:#CF0072;
+$baseskyblue:#0071BC;
+@include shengcheng($baseskyblue,'skyblue');
+@include shengcheng($basepurple,'purple');
+@include shengcheng($basegreen,'green');
+@include shengcheng($baseblue,'blue');
+@include shengcheng($basezhise,'zhise');
+@include shengcheng($basecolor,'red');
+@include shengcheng($basea,'pansy');
+@include shengcheng($baseyellow,'yellow');

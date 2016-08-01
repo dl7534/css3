@@ -1,0 +1,107 @@
+$brand : pink !default;
+$color : blue !default;
+.class{
+  background: $brand;
+  font-size:16px;
+  /*局部变量*/
+  bian {
+  	$brand : red;
+  	background: $brand
+  }
+
+  quanbian{
+  	  /*全局变量*/
+  	 background: $brand
+  }
+}
+/*嵌套*/
+nav{
+	a{
+		color:red;
+		font-size:12px;
+		header & {
+			color:green;
+		}
+	}
+}
+.box {
+	border::after{
+		top:10px;
+		bottom:15px;
+
+	}
+}
+
+.clearfix{
+	&:before,
+	&:after{
+		content:"";
+		display: table;
+	}
+	&:after{
+		clear:both;
+		overflow: hidden;
+	}
+}
+
+/*混合宏*/
+/*没有传值*/
+@mixin border-radius {
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+button{
+	@include border-radius
+}
+/*传值*/
+@mixin border-radius($radius:10px){
+	-webkit-border-radius:$radius;
+	border-radius:$radius;	
+}
+.zhi{
+	@include border-radius;
+}
+.vb{
+	@include border-radius(15px)
+}
+
+
+$grid-prefix: span !default;
+$grid-width: 60px !default;
+$grid-gutter: 20px !default;
+
+%grid {
+  float: left;
+  margin-left: $grid-gutter / 2;
+  margin-right: $grid-gutter / 2;
+}
+@for $i from 1 through 12 {
+  .#{$grid-prefix}#{$i}{
+    width: $grid-width * $i + $grid-gutter * ($i - 1);
+    @extend %grid;
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

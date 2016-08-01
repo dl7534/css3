@@ -1,0 +1,307 @@
+ ul,li,h1,h2{
+  list-style: none;
+  margin:0;
+  padding:0;
+ }
+ %clear{
+   clear:both;
+   content:'';
+   display: block;
+ }
+
+  $medium:1068px;
+  $small:736px;
+  $large:2560px;
+.aside  li{
+    	float: left;
+    	height:200px;
+    	width:25%;
+    	@media screen and(max-width:$medium){
+    		width:50%;
+    	}
+    	@media screen and(max-width:$small){
+    		width:100%;
+    	}
+     span{
+     width:1px;
+     display: block;
+     position: absolute;
+     top:0;
+     left:0;
+     height:1px;
+     overflow: hidden;
+   }
+    }
+.aside a {
+	display: block;
+	height:200px;
+  border-right:3px solid #fff;
+  border-bottom:5px solid #fff;
+	background-position: center, center;
+	/*background-repeat: no-repeat;*/
+	background-size: 360px 200px;
+	@media screen and(max-width: $medium){
+            background-size:630px 200px;
+	}
+	@media screen and(max-width: $small){
+            background-size:736px 200px;
+	}
+}
+    $items : iphone_6s,apple_tv,macbook,accessories;
+    @for $i from 1 through 4{
+	    .aside li:nth-child(#{$i}) a{
+		background-image: url(img/nth($items,$i)+'_large.jpg');
+		@media screen and(max-width: $medium){
+		background-image: url(img/nth($items,$i)+'_medium.jpg');
+		}
+		@media screen and(max-width:$small){
+		background-image: url(img/nth($items,$i)+'_small.jpg');
+
+		}
+	}
+}
+
+
+ .products{
+ 	min-height:65px;
+ 	margin-top:50px;
+ 	/*border:1px solid #000;*/
+ 	width:100%;
+ 	/*box-sizing: border-box;*/
+    &::after{
+      @extend %clear;
+  }
+
+ }
+ .products li{
+ 	height:65px;
+ 	/*background:green;*/
+ 	float: left;
+ 	/*border:1px solid #000;*/
+  box-sizing: border-box;
+ };
+ .products li:nth-child(3){
+   background:#fff;
+   font-size:18px;
+   font-weight: lighter;
+   color:#08c;
+   text-align: center;
+   line-height: 65px;
+ };
+ .products li:nth-child(1) img{
+  display: block;
+  margin:0 auto;
+ }
+  .products li:nth-child(2){
+  float: left;
+  font-size:18px;
+  text-align: center;
+  line-height: 65px;
+  border-left:1px solid #d6d6d6;
+  display: inline-block;
+ }
+ .products li:nth-child(2) a{
+    color:#08c;
+    font-size:18px;
+    float:left;
+    text-decoration: none;
+ }
+%colum{
+     position: relative;
+     float:left;
+};
+ $rules : (
+	large:1600px,
+	medium:980px,
+	small:765px,
+);
+$num:12;
+@each  $rule in map_keys($rules){
+    @for $i from 1 through $num{
+    	.#{$rule}-#{$i}{
+		@extend %colum;
+		width: percentage($i/$num);
+	}
+    }
+} 
+ @each  $rule in map_keys($rules){
+    @media screen and(max-width:map_get($rules,$rule)){
+    	@for $i from 1 through $num {
+    	  .#{$rule}-#{$i}{
+		width: percentage($i/$num);
+	     }	
+    	} 	
+    }
+} 
+
+
+/*暂停*/
+/*papple*/
+.footer{
+  width:100%;
+  height:auto;
+  background:#F2F2F2;
+  float: left;
+  clear:both;
+  content:'';
+  display: block;
+  .ac-gf-directory-column{
+    width:195px;
+    height:210px;
+    float: left;
+  }
+  .col h3 .jia{
+    display:none;
+    float: right;
+    margin-right:10px;
+  }
+  .col h3{
+   
+  }
+  a{
+    text-decoration: none;
+    color:#666666;
+  }
+}
+
+
+
+
+@for $i from 5 through 10{
+	.with-#{$i}-col {
+		&::after{
+		@extend %clear;
+		}
+	}
+	.with-#{$i}-col .col{
+       @extend %colum;
+       width:percentage(1/$i);
+	}
+}
+
+@media screen and(max-width: map_get($rules,'small')){
+     @for $i from 5 through 10 {
+     	  .with-#{$i}-col .col{ 
+     	  	/*@extend   %colum;*/
+          float: left;
+     	  	width:100%;
+          ul{
+            display: none;
+          }
+          h3{
+            border-bottom:1px solid #F2F2F2;
+           .jia{
+             display: block;
+           }
+          }
+     	  }
+     }
+}
+
+/*.footer .col{
+  height:150px;
+  border:1px solid #000;
+  box-sizing: border-box;
+  background:red;
+  float: left;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*5.15尾部*/
+
+#footer{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: normal;
+  background-color: #f2f2f2;
+  color: #666;
+  position: relative;
+  padding-top: 20px;
+  &::after{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    pointer-events: auto;
+    letter-spacing: normal;
+  }
+  input{
+    display: none;
+  }
+  .footer-inner{
+    margin:0 auto;
+    max-width: 980px;
+    padding:0 22px;
+    nav{
+      &::after{
+        @extend %clear;
+      }
+    }
+    .column{
+      position: relative;
+      z-index: 1;
+      min-height: 2px;
+      margin: 0;
+      padding: 0;
+      float: left;
+      float:left;
+    }
+  }
+}
+#footer nav .section ul{
+  margin-right: 20px;
+  li{
+    line-height: 20px;
+    height: 20px;
+    a{
+      color: #666;
+      font-family: "Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+  @media screen and(max-width: $small){
+    display:none;
+  }
+}
+#footer nav .section h3{
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #333;
+  margin: 0;
+  @media screen and(max-width: $small){
+    &::after{
+      content: '+';
+      float:right;
+    }
+  }
+}
+@media screen and(max-width:$small){
+  $shops:shop1,shop2,shop3,shop4,shop5,shop6,shop7;
+  @each $shop in $shops{
+    ##{$shop}:checked + .section {
+      ul{
+        display: block;
+      }
+      h2::after{
+        transform: rotateZ(45deg);
+        transition: all .4s ease;
+      }
+    }
+  }
+}

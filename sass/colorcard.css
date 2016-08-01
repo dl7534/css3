@@ -1,0 +1,689 @@
+body, li, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.list li {
+  width: 4.7619%;
+  height: 80px;
+  float: left;
+}
+
+.list.skyblue li:nth-child(1) {
+  background: #bce4ff;
+}
+
+.list.skyblue li:nth-child(2) {
+  background: #a3daff;
+}
+
+.list.skyblue li:nth-child(3) {
+  background: #89d0ff;
+}
+
+.list.skyblue li:nth-child(4) {
+  background: #70c6ff;
+}
+
+.list.skyblue li:nth-child(5) {
+  background: #56bcff;
+}
+
+.list.skyblue li:nth-child(6) {
+  background: #3db1ff;
+}
+
+.list.skyblue li:nth-child(7) {
+  background: #23a7ff;
+}
+
+.list.skyblue li:nth-child(8) {
+  background: #0a9dff;
+}
+
+.list.skyblue li:nth-child(9) {
+  background: #0090ef;
+}
+
+.list.skyblue li:nth-child(10) {
+  background: #0080d6;
+}
+
+.list.skyblue li:nth-child(11) {
+  background: #0071BC;
+}
+
+.list.skyblue li:nth-child(12) {
+  background: #0062a3;
+}
+
+.list.skyblue li:nth-child(13) {
+  background: #005289;
+}
+
+.list.skyblue li:nth-child(14) {
+  background: #004370;
+}
+
+.list.skyblue li:nth-child(15) {
+  background: #003456;
+}
+
+.list.skyblue li:nth-child(16) {
+  background: #00243d;
+}
+
+.list.skyblue li:nth-child(17) {
+  background: #001523;
+}
+
+.list.skyblue li:nth-child(18) {
+  background: #00060a;
+}
+
+.list.skyblue li:nth-child(19) {
+  background: black;
+}
+
+.list.skyblue li:nth-child(20) {
+  background: black;
+}
+
+.list.skyblue li:nth-child(21) {
+  background: black;
+}
+
+.list.purple li:nth-child(1) {
+  background: #ffcfe9;
+}
+
+.list.purple li:nth-child(2) {
+  background: #ffb6de;
+}
+
+.list.purple li:nth-child(3) {
+  background: #ff9cd3;
+}
+
+.list.purple li:nth-child(4) {
+  background: #ff83c7;
+}
+
+.list.purple li:nth-child(5) {
+  background: #ff69bc;
+}
+
+.list.purple li:nth-child(6) {
+  background: #ff50b0;
+}
+
+.list.purple li:nth-child(7) {
+  background: #ff36a5;
+}
+
+.list.purple li:nth-child(8) {
+  background: #ff1d99;
+}
+
+.list.purple li:nth-child(9) {
+  background: #ff038e;
+}
+
+.list.purple li:nth-child(10) {
+  background: #e90080;
+}
+
+.list.purple li:nth-child(11) {
+  background: #CF0072;
+}
+
+.list.purple li:nth-child(12) {
+  background: #b60064;
+}
+
+.list.purple li:nth-child(13) {
+  background: #9c0056;
+}
+
+.list.purple li:nth-child(14) {
+  background: #830048;
+}
+
+.list.purple li:nth-child(15) {
+  background: #69003a;
+}
+
+.list.purple li:nth-child(16) {
+  background: #50002c;
+}
+
+.list.purple li:nth-child(17) {
+  background: #36001e;
+}
+
+.list.purple li:nth-child(18) {
+  background: #1d0010;
+}
+
+.list.purple li:nth-child(19) {
+  background: #030002;
+}
+
+.list.purple li:nth-child(20) {
+  background: black;
+}
+
+.list.purple li:nth-child(21) {
+  background: black;
+}
+
+.list.green li:nth-child(1) {
+  background: #80ff80;
+}
+
+.list.green li:nth-child(2) {
+  background: #67ff67;
+}
+
+.list.green li:nth-child(3) {
+  background: #4dff4d;
+}
+
+.list.green li:nth-child(4) {
+  background: #34ff34;
+}
+
+.list.green li:nth-child(5) {
+  background: #1aff1a;
+}
+
+.list.green li:nth-child(6) {
+  background: #01ff01;
+}
+
+.list.green li:nth-child(7) {
+  background: #00e600;
+}
+
+.list.green li:nth-child(8) {
+  background: #00cd00;
+}
+
+.list.green li:nth-child(9) {
+  background: #00b300;
+}
+
+.list.green li:nth-child(10) {
+  background: #009a00;
+}
+
+.list.green li:nth-child(11) {
+  background: green;
+}
+
+.list.green li:nth-child(12) {
+  background: #006700;
+}
+
+.list.green li:nth-child(13) {
+  background: #004d00;
+}
+
+.list.green li:nth-child(14) {
+  background: #003400;
+}
+
+.list.green li:nth-child(15) {
+  background: #001a00;
+}
+
+.list.green li:nth-child(16) {
+  background: #000100;
+}
+
+.list.green li:nth-child(17) {
+  background: black;
+}
+
+.list.green li:nth-child(18) {
+  background: black;
+}
+
+.list.green li:nth-child(19) {
+  background: black;
+}
+
+.list.green li:nth-child(20) {
+  background: black;
+}
+
+.list.green li:nth-child(21) {
+  background: black;
+}
+
+.list.blue li:nth-child(1) {
+  background: white;
+}
+
+.list.blue li:nth-child(2) {
+  background: #e6e6ff;
+}
+
+.list.blue li:nth-child(3) {
+  background: #ccccff;
+}
+
+.list.blue li:nth-child(4) {
+  background: #b3b3ff;
+}
+
+.list.blue li:nth-child(5) {
+  background: #9999ff;
+}
+
+.list.blue li:nth-child(6) {
+  background: #8080ff;
+}
+
+.list.blue li:nth-child(7) {
+  background: #6666ff;
+}
+
+.list.blue li:nth-child(8) {
+  background: #4d4dff;
+}
+
+.list.blue li:nth-child(9) {
+  background: #3333ff;
+}
+
+.list.blue li:nth-child(10) {
+  background: #1a1aff;
+}
+
+.list.blue li:nth-child(11) {
+  background: blue;
+}
+
+.list.blue li:nth-child(12) {
+  background: #0000e6;
+}
+
+.list.blue li:nth-child(13) {
+  background: #0000cc;
+}
+
+.list.blue li:nth-child(14) {
+  background: #0000b3;
+}
+
+.list.blue li:nth-child(15) {
+  background: #000099;
+}
+
+.list.blue li:nth-child(16) {
+  background: navy;
+}
+
+.list.blue li:nth-child(17) {
+  background: #000066;
+}
+
+.list.blue li:nth-child(18) {
+  background: #00004d;
+}
+
+.list.blue li:nth-child(19) {
+  background: #000033;
+}
+
+.list.blue li:nth-child(20) {
+  background: #00001a;
+}
+
+.list.blue li:nth-child(21) {
+  background: black;
+}
+
+.list.zhise li:nth-child(1) {
+  background: #d8a3f5;
+}
+
+.list.zhise li:nth-child(2) {
+  background: #cf8cf3;
+}
+
+.list.zhise li:nth-child(3) {
+  background: #c575f0;
+}
+
+.list.zhise li:nth-child(4) {
+  background: #bb5eee;
+}
+
+.list.zhise li:nth-child(5) {
+  background: #b247eb;
+}
+
+.list.zhise li:nth-child(6) {
+  background: #a830e9;
+}
+
+.list.zhise li:nth-child(7) {
+  background: #9e19e6;
+}
+
+.list.zhise li:nth-child(8) {
+  background: #8f17cf;
+}
+
+.list.zhise li:nth-child(9) {
+  background: #7f14b8;
+}
+
+.list.zhise li:nth-child(10) {
+  background: #6f12a1;
+}
+
+.list.zhise li:nth-child(11) {
+  background: #5F0F8A;
+}
+
+.list.zhise li:nth-child(12) {
+  background: #4f0d73;
+}
+
+.list.zhise li:nth-child(13) {
+  background: #3f0a5c;
+}
+
+.list.zhise li:nth-child(14) {
+  background: #300845;
+}
+
+.list.zhise li:nth-child(15) {
+  background: #20052e;
+}
+
+.list.zhise li:nth-child(16) {
+  background: #100317;
+}
+
+.list.zhise li:nth-child(17) {
+  background: black;
+}
+
+.list.zhise li:nth-child(18) {
+  background: black;
+}
+
+.list.zhise li:nth-child(19) {
+  background: black;
+}
+
+.list.zhise li:nth-child(20) {
+  background: black;
+}
+
+.list.zhise li:nth-child(21) {
+  background: black;
+}
+
+.list.red li:nth-child(1) {
+  background: white;
+}
+
+.list.red li:nth-child(2) {
+  background: #ffe6e6;
+}
+
+.list.red li:nth-child(3) {
+  background: #ffcccc;
+}
+
+.list.red li:nth-child(4) {
+  background: #ffb3b3;
+}
+
+.list.red li:nth-child(5) {
+  background: #ff9999;
+}
+
+.list.red li:nth-child(6) {
+  background: #ff8080;
+}
+
+.list.red li:nth-child(7) {
+  background: #ff6666;
+}
+
+.list.red li:nth-child(8) {
+  background: #ff4d4d;
+}
+
+.list.red li:nth-child(9) {
+  background: #ff3333;
+}
+
+.list.red li:nth-child(10) {
+  background: #ff1a1a;
+}
+
+.list.red li:nth-child(11) {
+  background: red;
+}
+
+.list.red li:nth-child(12) {
+  background: #e60000;
+}
+
+.list.red li:nth-child(13) {
+  background: #cc0000;
+}
+
+.list.red li:nth-child(14) {
+  background: #b30000;
+}
+
+.list.red li:nth-child(15) {
+  background: #990000;
+}
+
+.list.red li:nth-child(16) {
+  background: maroon;
+}
+
+.list.red li:nth-child(17) {
+  background: #660000;
+}
+
+.list.red li:nth-child(18) {
+  background: #4d0000;
+}
+
+.list.red li:nth-child(19) {
+  background: #330000;
+}
+
+.list.red li:nth-child(20) {
+  background: #1a0000;
+}
+
+.list.red li:nth-child(21) {
+  background: black;
+}
+
+.list.pansy li:nth-child(1) {
+  background: white;
+}
+
+.list.pansy li:nth-child(2) {
+  background: #fffdfc;
+}
+
+.list.pansy li:nth-child(3) {
+  background: #fdeae4;
+}
+
+.list.pansy li:nth-child(4) {
+  background: #fcd8cc;
+}
+
+.list.pansy li:nth-child(5) {
+  background: #fac6b4;
+}
+
+.list.pansy li:nth-child(6) {
+  background: #f9b49c;
+}
+
+.list.pansy li:nth-child(7) {
+  background: #f7a284;
+}
+
+.list.pansy li:nth-child(8) {
+  background: #f6906c;
+}
+
+.list.pansy li:nth-child(9) {
+  background: #f47e54;
+}
+
+.list.pansy li:nth-child(10) {
+  background: #f36c3c;
+}
+
+.list.pansy li:nth-child(11) {
+  background: #F15A24;
+}
+
+.list.pansy li:nth-child(12) {
+  background: #ec490f;
+}
+
+.list.pansy li:nth-child(13) {
+  background: #d4420e;
+}
+
+.list.pansy li:nth-child(14) {
+  background: #bc3b0c;
+}
+
+.list.pansy li:nth-child(15) {
+  background: #a4330b;
+}
+
+.list.pansy li:nth-child(16) {
+  background: #8d2c09;
+}
+
+.list.pansy li:nth-child(17) {
+  background: #752407;
+}
+
+.list.pansy li:nth-child(18) {
+  background: #5d1d06;
+}
+
+.list.pansy li:nth-child(19) {
+  background: #451504;
+}
+
+.list.pansy li:nth-child(20) {
+  background: #2d0e03;
+}
+
+.list.pansy li:nth-child(21) {
+  background: #150601;
+}
+
+.list.yellow li:nth-child(1) {
+  background: white;
+}
+
+.list.yellow li:nth-child(2) {
+  background: #ffffe6;
+}
+
+.list.yellow li:nth-child(3) {
+  background: #ffffcc;
+}
+
+.list.yellow li:nth-child(4) {
+  background: #ffffb3;
+}
+
+.list.yellow li:nth-child(5) {
+  background: #ffff99;
+}
+
+.list.yellow li:nth-child(6) {
+  background: #ffff80;
+}
+
+.list.yellow li:nth-child(7) {
+  background: #ffff66;
+}
+
+.list.yellow li:nth-child(8) {
+  background: #ffff4d;
+}
+
+.list.yellow li:nth-child(9) {
+  background: #ffff33;
+}
+
+.list.yellow li:nth-child(10) {
+  background: #ffff1a;
+}
+
+.list.yellow li:nth-child(11) {
+  background: yellow;
+}
+
+.list.yellow li:nth-child(12) {
+  background: #e6e600;
+}
+
+.list.yellow li:nth-child(13) {
+  background: #cccc00;
+}
+
+.list.yellow li:nth-child(14) {
+  background: #b3b300;
+}
+
+.list.yellow li:nth-child(15) {
+  background: #999900;
+}
+
+.list.yellow li:nth-child(16) {
+  background: olive;
+}
+
+.list.yellow li:nth-child(17) {
+  background: #666600;
+}
+
+.list.yellow li:nth-child(18) {
+  background: #4d4d00;
+}
+
+.list.yellow li:nth-child(19) {
+  background: #333300;
+}
+
+.list.yellow li:nth-child(20) {
+  background: #1a1a00;
+}
+
+.list.yellow li:nth-child(21) {
+  background: black;
+}

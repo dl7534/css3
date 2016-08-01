@@ -1,0 +1,43 @@
+*{
+   list-style: none;
+}
+.container{
+   >li{
+      min-width:250px;
+      min-height:600px;
+      float: left;
+      border:1px solid #ccc;
+      a{
+         cursor:default;
+         font-style: 30px;
+      }
+   }
+   &::after{
+    content:'';
+    clear:both;
+    display: block;
+   }
+}
+
+
+
+ $lists:(
+  'seletor':red,
+  'css':green,
+  'manipulation':#cbaada,
+  'traversing':#bbbaaa,
+  'events':#cccaaa,
+  );
+
+  @each $className in map_keys($lists){
+    $color:map_get($lists,$className);
+    li.#{$className}{
+      background: $color;
+      li:hover{
+        background:black;
+        color:$color;
+      };
+    }
+  }
+
+

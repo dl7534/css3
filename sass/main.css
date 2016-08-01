@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.class {
+  background: pink;
+  font-size: 16px;
+  /*局部变量*/
+}
+
+.class bian {
+  background: red;
+}
+
+.class quanbian {
+  /*全局变量*/
+  background: pink;
+}
+
+/*嵌套*/
+nav a {
+  color: red;
+  font-size: 12px;
+}
+
+header nav a {
+  color: green;
+}
+
+.box border::after {
+  top: 10px;
+  bottom: 15px;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+  overflow: hidden;
+}
+
+/*混合宏*/
+/*没有传值*/
+button {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*传值*/
+.zhi {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.vb {
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.span1 {
+  width: 60px;
+}
+
+.span2 {
+  width: 140px;
+}
+
+.span3 {
+  width: 220px;
+}
+
+.span4 {
+  width: 300px;
+}
+
+.span5 {
+  width: 380px;
+}
+
+.span6 {
+  width: 460px;
+}
+
+.span7 {
+  width: 540px;
+}
+
+.span8 {
+  width: 620px;
+}
+
+.span9 {
+  width: 700px;
+}
+
+.span10 {
+  width: 780px;
+}
+
+.span11 {
+  width: 860px;
+}
+
+.span12 {
+  width: 940px;
+}

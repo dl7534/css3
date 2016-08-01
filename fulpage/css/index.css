@@ -1,0 +1,117 @@
+@charset "UTF-8";
+.da {
+  width: 200px;
+  height: 20px;
+  background: red;
+}
+
+.section {
+  /*background:red;*/
+  font-size: 56px;
+  color: #000;
+}
+
+#fullpage .section:nth-child(1) {
+  background: url("../images/photo-1.jpg");
+  background-size: cover;
+}
+
+#fullpage .section:nth-child(2) {
+  background: url("../images/photo-2.jpg");
+  background-size: cover;
+}
+
+#fullpage .section:nth-child(3) {
+  background: url("../images/photo-3.jpg");
+  background-size: cover;
+}
+
+#fullpage .section:nth-child(4) {
+  background: url("../images/photo-4.jpg");
+  background-size: cover;
+}
+
+#fullpage .section:nth-child(5) {
+  background: url("../images/photo-5.jpg");
+  background-size: cover;
+}
+
+#section2 .zuo, #section2 .you {
+  width: 200px;
+  height: 200px;
+  background: teal;
+  top: 50%;
+  position: absolute;
+  z-index: 100000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 1s ease, opacity 0.91s ease;
+}
+
+#section2 .zuo {
+  /*float: left;*/
+  left: 0;
+}
+
+#section2 .you {
+  /*float: right;*/
+  right: 0;
+}
+
+#section2.active .zuo {
+  opacity: 1;
+  transform: translateX(800px);
+}
+
+#section2.active .you {
+  opacity: 1;
+  transform: translateX(-800px);
+}
+
+@keyframes zhuiluo {
+  0% {
+    transform: translateY(-300px);
+  }
+  100% {
+    transform: translateY(100px);
+  }
+}
+
+@keyframes shengqi {
+  0% {
+    transform: translateY(500px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes zhuan {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+#section1 h1 {
+  color: teal;
+  transition: transform 2s ease both;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#section1.active h1 {
+  /*   animation-name: zhuiluo;
+   animation-duration: 4s;   // 动画时长
+   animation-timing-function: cubic-bezier(0.2,2,1,1);  //动画运动方式
+   animation-fill-mode: both;      //动画最终停留的状态
+   animation-direction: reverse;    
+   animation-iteration-count: infinite;  //动画运动次数
+   animation-direction: alternate;   //动画来回
+   animation-play-state: paused;    //js 中对动画的控制
+   animation-delay: 1s    //动画延迟
+*/
+  animation: zhuan 1s ease infinite;
+}

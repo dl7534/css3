@@ -1,0 +1,35 @@
+body,li,ul{
+	margin:0;;
+	padding:0;
+	list-style:none;
+}
+.list{
+	&::after{
+		content:'';
+		clear:both;
+		display: table;
+	}
+	li{
+		width:percentage(1/21);
+		height:80px;
+		float: left;
+	}
+}
+@mixin shengcheng($color,$clsss){
+	 @for $i from 1 to 11 {
+	 	 $off : 11 - $i;
+         .list.#{$class} li:nth-child(#{$i}){
+         	background: lighten($color,$off * 5);
+
+         }
+	 }
+	 .lists.#{$x} li:nth-child(11){
+	 	background: $co@forlor;
+	 }
+	 @for $i from 1 to 11 {
+	 	 .list.#{$x} li:nth-child(#{$i + 11}){
+	 	 	 background: darken($color,$i * 5);
+	 	 }
+	 }
+
+}

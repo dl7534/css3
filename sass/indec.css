@@ -1,0 +1,66 @@
+* {
+  list-style: none;
+}
+
+.container > li {
+  min-width: 250px;
+  min-height: 600px;
+  float: left;
+  border: 1px solid #ccc;
+}
+
+.container > li a {
+  cursor: default;
+  font-style: 30px;
+}
+
+.container::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+li.seletor {
+  background: red;
+}
+
+li.seletor li:hover {
+  background: black;
+  color: red;
+}
+
+li.css {
+  background: green;
+}
+
+li.css li:hover {
+  background: black;
+  color: green;
+}
+
+li.manipulation {
+  background: #cbaada;
+}
+
+li.manipulation li:hover {
+  background: black;
+  color: #cbaada;
+}
+
+li.traversing {
+  background: #bbbaaa;
+}
+
+li.traversing li:hover {
+  background: black;
+  color: #bbbaaa;
+}
+
+li.events {
+  background: #cccaaa;
+}
+
+li.events li:hover {
+  background: black;
+  color: #cccaaa;
+}

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/*@font-face{
+	font-family:'consolas';
+	src:
+	local('consolas'),
+	url('font-type/consolas.woff') format('woff'),
+	url('font-type/consolas.eot') format('eot'),
+	url('font-type/consolas.ttf') format('ttf'),
+	url('font-type/consolas.svg') format('svg');
+}
+@font-face{
+	font-family: 'myriad normal';
+	src:url(font-type/myriad-set-pro_text.woff);
+
+}
+@font-face{
+	font-family: 'myriad thin';
+	src:url(font-type/myriad-set-pro_thin.woff);
+
+}
+@font-face{
+	font-family: 'myriad semibold';
+	src:url(font-type/myriad-set-pro_semibold.woff);
+
+}
+@font-face{
+	font-family: 'myriad extrathin';
+	src:url(font-type/myriad-set-pro_extrathin.woff);
+
+}*/
+/*kaishi*/
+@font-face {
+  font-family: "daimaziti1";
+  src: local("myriad-set-pro_extrathin"), url("font-type/myriad-set-pro_extrathin.woff") format("woff"), url("font-type/myriad-set-pro_extrathin.eot") format("eot"), url("font-type/myriad-set-pro_extrathin.ttf") format("ttf"), url("font-type/myriad-set-pro_extrathin.svg") format("svg");
+}
+
+@font-face {
+  font-family: "daimaziti2";
+  src: local("myriad-set-pro_thin"), url("font-type/myriad-set-pro_thin.woff") format("woff"), url("font-type/myriad-set-pro_thin.eot") format("eot"), url("font-type/myriad-set-pro_thin.ttf") format("ttf"), url("font-type/myriad-set-pro_thin.svg") format("svg");
+}
+
+@font-face {
+  font-family: "daimaziti3";
+  src: local("myriad-set-pro_text"), url("font-type/myriad-set-pro_text.woff") format("woff"), url("font-type/myriad-set-pro_text.eot") format("eot"), url("font-type/myriad-set-pro_text.ttf") format("ttf"), url("font-type/myriad-set-pro_text.svg") format("svg");
+}
+
+@font-face {
+  font-family: "daimaziti4";
+  src: local("myriad-set-pro_semibold"), url("font-type/myriad-set-pro_semibold.woff") format("woff"), url("font-type/myriad-set-pro_semibold.eot") format("eot"), url("font-type/myriad-set-pro_semibold.ttf") format("ttf"), url("font-type/myriad-set-pro_semibold.svg") format("svg");
+}
+
+span {
+  font-family: '黑体','宋体','微软雅黑' ,'serif';
+  font-size: 50px;
+}
+
+p:nth-of-type(1) {
+  font-size: 50px;
+  font-family: 'daimaziti1';
+}
+
+p:nth-of-type(2) {
+  font-size: 50px;
+  font-family: 'daimaziti2';
+}
+
+p:nth-of-type(3) {
+  font-size: 50px;
+  font-family: 'daimaziti3';
+}
+
+p:nth-of-type(4) {
+  font-size: 50px;
+  font-family: 'daimaziti4';
+}

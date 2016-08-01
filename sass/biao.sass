@@ -1,0 +1,14 @@
+$lists: seletor , css ,manipulation , traversing , events;
+$color:red,blue,green,#acc111,#aaa425,#bbb235;
+@for $i from 1 to length($lists) {
+    li.#{ nth($lists,$i) }{
+        $tem:nth($colors,$i);
+        background: $tem;
+    }
+    a{
+        font-size:30px;
+    }
+    li:hover{
+        background: $tem;
+    }
+}

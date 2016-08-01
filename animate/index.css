@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/*@import 'font';*/
+@font-face {
+  font-family: 'myrial thin';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'myriad thin';
+}
+
+ul, li, h2 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.test {
+  width: 100px;
+  height: 100px;
+  background: #499A91;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: left 0.8s cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+.content {
+  max-width: 980px;
+  min-height: 1300px;
+  border-size: border-box;
+  padding: 30px;
+  box-shadow: 0 0 3px black;
+  margin: 0 auto;
+}
+
+.content h2 {
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.content .example {
+  padding-top: 20px;
+}
+
+.content .example nav {
+  position: relative;
+}
+
+.content .example nav ul::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.content .example nav li {
+  width: 33.333%;
+  height: 70px;
+  float: left;
+  background: pink;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.content .example nav .runner {
+  width: 33.333%;
+  height: 5px;
+  background: green;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: left 0.2s cubic-bezier(1, 0.3, 1, 1);
+}
+
+.content #transition .da {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.content #transition .da:hover .runner {
+  left: 0;
+}
+
+.content #transition .da:hover + .test {
+  left: 800px;
+}
+
+.content #transition .da .xiao {
+  transition-property: top, left;
+  transition-duration: 0.8s,0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0;
+  /*transition: all 0.8s ease ;*/
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  border: 1px solid #000;
+}
+
+.example li:nth-child(1):hover ~ .runner {
+  left: 0;
+}
+
+.example li:nth-child(2):hover ~ .runner {
+  left: 33.333%;
+}
+
+.example li:nth-child(3):hover ~ .runner {
+  left: 66.666%;
+}
+
+input {
+  display: block;
+}
+
+.delay-list li {
+  width: 800px;
+  height: 56px;
+  border: 1px solid #000;
+  margin-bottom: 15px solid #ccc;
+  position: relative;
+  left: -100%;
+  transition-property: left,background;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+}
+
+li:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+li:nth-child(2) {
+  transition-delay: 1s;
+}
+
+li:nth-child(3) {
+  transition-delay: 1.5s;
+}
+
+li:nth-child(4) {
+  transition-delay: 2s;
+}
+
+#da:checked + .delay-list li {
+  background: yellow;
+  left: 80%;
+}
+
+#transition .rotate, #transition .scale, #transition .skew, #transition .translate, #transition .ani {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  float: left;
+  left: 0;
+  display: block;
+  border-top: 1px solid #000;
+  border-right: 2px solid #000;
+  border-bottom: 1px solid #000;
+  border-left: 2px solid #000;
+  background-image: linear-gradient(red, blue);
+  transition: transform .5s ease-in-out;
+}
+
+#transition .rotate:hover {
+  transform: rotateZ(600deg);
+  /*background-position:top right bottom left;*/
+  /*20% 30%*/
+  /*10px  30px*/
+  transform-origin: right center;
+}
+
+#transition .scale:hover {
+  transform: scale(1.2, 2);
+}
+
+#transition .skew:hover {
+  transform: skew(60deg, 45deg);
+}
+
+#transition .translate:hover {
+  transform: translateX(45px) translateY(60px);
+}
+
+h2 {
+  transition: font-size 0.8s ease-in-out;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 750px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+
+#transition .ani {
+  height: 500px;
+  /*animation:shanshou 1s ease;*/
+}
+
+#transition .ani .ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: teal;
+  /*background-image:linear-gradient(red,blue);*/
+  animation: tantiao 10s ease both infinite;
+  /*infinite  不停的跳*/
+  /*both  动画留到最后*/
+}
+
+@keyframes tantiao {
+  0% {
+    animation-timing-function: cubic-bezier(0.08, 0.35, 0, 1.38);
+    transform: translateY(30px);
+  }
+  25% {
+    animation-timing-function: cubic-bezier(0.01, 1.23, 0, 1.29);
+    transform: translateY(450px);
+  }
+  50% {
+    animation-timing-function: cubic-bezier(0.18, 0.9, 0.23, 0.93);
+    transform: translateY(200px);
+  }
+  75% {
+    animation-timing-function: cubic-bezier(0.38, 0.64, 0.43, 0.66);
+    transform: translateY(450px);
+  }
+  80% {
+    animation-timing-function: cubic-bezier(0.49, 0.49, 0.51, 0.49);
+    transform: translateY(350px);
+  }
+  100% {
+    animation-timing-function: cubic-bezier(0.63, 0.29, 0.68, 0.35);
+    transform: translateY(450px);
+  }
+}
+
+@keyframes shanshou {
+  0%, 35%, 50%, 85%, 100% {
+    opacity: 1;
+  }
+  25%, 45%, 75% {
+    opacity: 0;
+  }
+}
+
+/*
+
+  background-image:linear-gradient(red,blue)   //线性渐变
+  transition:transform .5s ease-in-out;
+
+  transform:rotateZ(720deg)
+  transform:retoteX(45deg)
+  transform:retoteY(45deg)
+  transform:retoteY(45deg)  rotate(45deg)  //合并*/
+/*  skewX(逆时针) skewY(顺时针) skewZ skew3d (deg)
+  translateX(x轴位移)  translateY translateZ translate3d(10px，10px,0)
+  scaleX    scaleY  scaleZ scale3d(1.1)
+  rotateX rotateY rotateZ(deg)
+  border-style:dotted;   //虚线*/
+/*
+重要笔记
+transform:scaleX(1.2,1.2) translate(-18px);
+opacity:0;
+
+
+@include onsmall {
+  #check:checked ~ #global-nav{
+     height:600px;
+
+  }
+}
+visibility:hidden;
+@for $i from 1 through 8{
+
+  transtion:transform .3s $i*0.03 ease
+
+}*/
+/*苹果头部*/
+#header {
+  width: 800px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  transition: height .5s ease-in-out;
+}
+
+#header label {
+  transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+#header .heng {
+  width: 100px;
+  height: 48px;
+  float: left;
+  /*transition:transform .5s ease-in-out;*/
+  transition: transform 0.4s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+}
+
+#header .heng .one {
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  display: block;
+  float: left;
+  left: 10px;
+  /*transition: transform .5s ease-in-out;*/
+  transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transform: rotate(0);
+}
+
+#header .heng .two {
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 60px;
+  display: block;
+  float: left;
+  left: 10px;
+  /*transition: transform .5s ease-in-out;*/
+  transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transform: rotate(0);
+}
+
+#header input {
+  z-index: 1000;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.chu dd {
+  float: left;
+  position: relative;
+  left: 30px;
+  font-size: 16px;
+  color: pink;
+  clear: both;
+  content: '';
+  text-align: justify;
+  width: 100%;
+  opacity: 0;
+  /*display: none;*/
+  height: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  transition: transform 0.8s ease-in-out;
+}
+
+#check:checked ~ #header .one {
+  transform-origin: left center;
+  transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transform: rotate(45deg);
+}
+
+#check:checked ~ #header .two {
+  transform-origin: left center;
+  transition: transform 0.25s 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  transform: rotate(-45deg);
+}
+
+#check:checked ~ #header {
+  height: 500px;
+}
+
+#check:checked ~ #header dd {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+#check:checked ~ #header dd:nth-child(1) {
+  transition-delay: 0s;
+  color: teal;
+}
+
+#check:checked ~ #header dd:nth-child(2) {
+  transition-delay: 0.2s;
+  color: red;
+}
+
+#check:checked ~ #header dd:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+#check:checked ~ #header dd:nth-child(4) {
+  transition-delay: 0.6s;
+}
+
+#check:checked ~ #header dd:nth-child(5) {
+  transition-delay: 0.8s;
+}

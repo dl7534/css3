@@ -1,0 +1,48 @@
+body,li,ul{
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+ $base : red;
+ .seka {
+	&::after{
+	  content:'';
+	  clear:both;
+	  display: table;
+	}
+    li {
+    	width:percentage(1/21);
+    	height:80px;
+    	float: left;
+    }
+}
+
+
+ $seka :(
+     'red' : red,
+     'blue' : blue,
+     'green': green,
+     'yellow': yellow,
+     'orange':orange,
+     'sky':#3993DA,
+     'floor':#72DD1F,
+     'ceil':#F205BC,
+);
+.seka{
+  @each $className in map_keys($seka){
+     $color: map_get($seka,$className);
+     @for $i from 1 to 11 {
+      .#{$className} li:nth-child(#{$i}){
+         background:lighten($color,(11-$i) *4)
+       }
+     }
+    .#{$className} li:nth-child(11){
+       background: $color;
+     }
+     @for $i from   1 to 11{
+         .#{$className} li:nth-child(#{$i+11}){
+            background: darken($color,$i*5)
+         }
+     }
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>fullpage</title>
+	<link href="css/jquery.fullPage.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/chajian.js"></script>
+</head>
+<body>
+	<script>
+		$(function(){
+			console.dir($(document).jquery)  //输出版本号
+		})
+	</script>
+  
+ 
+   <div id="fullpage">
+   	  <div class="section" id="section1">
+   	   <h1>前所未有</h1>
+   	  </div>
+   	  <div class="section"  id="section2">
+   	  	  <div class="zuo"></div>
+   	  	  <div class="you"></div>
+   	  </div>
+   	  <div class="section">
+   	  	<div class="slide">1</div>
+   	  	<div class="slide">3</div>
+   	  	<div class="slide"></div>
+   	  	<div class="slide">4</div>
+   	  </div>
+   	  <div class="section">14</div>
+   	  <div class="section">15</div>
+   </div> 
+   <script>
+$(function(){
+	$('#fullpage').fullpage({
+		sectionsColor:['red','teal','blue','yellow'],
+		scrollingSpeed:1000,
+		// verticalCentered:true,
+		// continuousVertical:true,
+		keyboardScrolling:true,
+		navigation:true,
+		// showActiveTooltip:true,
+		controlArrows:true,
+		anchors:['a','b','c','d','e'],
+		scrollBar:true,
+		controlArrows:true,
+		slidesNavigation:true,
+	})
+})
+</script>
+</body>
+	
+</html>
